@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Patrick Hand SC", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background-image: radial-gradient(circle at center, #e5e5e5, white);
+  height: 100vh;
+  animation: bg-animation 10s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes bg-animation {
+  0% {background-size: 300%;
+    background-position: center;}
+  50%{background-size: 100%;
+    background-position: center;}
+  100% {background-size: 300%;
+    background-position: center;}
+}
+
+.title-container {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  margin: 5% 0 0 0;
+  font-size: 1rem;
+  box-shadow: 6px 6px 4px #BABABA;
+  background-color: #fbfbfb;
+  border-radius: 12px;
+  user-select: none;
+}
+
+.title-container:hover {
+  text-decoration-line: underline;
+}
+
+.map-color {
+  fill: white;
+  stroke: black;
+  transition: 500ms;
+}
+
+.world-map g {
+  transition: 500ms;
+}
+
+.world-map g:hover {
+  fill: rgb(199, 199, 199);
+  translate: -1px -1px;
+  transition: 500ms;
+}
+
+/* #mapa-oceania {
+  width: 500px;
+} */
