@@ -16,9 +16,7 @@ function App() {
 
   return (
     <div className='main'>
-      <div className="title-container">
-        <h1>Mundología</h1>
-      </div>
+        <h1 className='w-[300px] bg-white select-none font-bold rounded-xl shadow-lg hover:underline cursor-pointer text-2xl mt-8 mb-5'>Mundología</h1>
       {currentSection === 'home' && <Home handleNext={showSection} />}
       {currentSection === 'practice' && <Practice handleNext={showSection} />}
       {currentSection === 'play' && <Play handleNext={showSection} />}
