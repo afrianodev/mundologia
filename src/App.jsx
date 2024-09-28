@@ -6,7 +6,7 @@ import Play from './components/Play.jsx';
 import WorldMap from './components/WorldMap.jsx';
 
 function App() {
-  const[currentSection, setCurrentSection] = useState('home');
+  const[currentSection, setCurrentSection] = useState('play');
   const [mapType, setMapType] = useState('world');
 
   function showSection(section, map='world') {
